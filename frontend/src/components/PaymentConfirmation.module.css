@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  text-align: center;
+  background-color: #F0F0F0;
+  border-radius: 15px;
+}
+
+h2{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.bold{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.card .geen_header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #486349;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card .geen_header img {
+  margin: 15px 0 15px 0;
+  align-self: center;
+}
+
+.booking_image{
+  margin-bottom: 40px;
+}
+
+
+.reference_number {
+  text-align: center;
+}
+
+.user_email {
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .card{
+    width: 400px;
+  }
+}

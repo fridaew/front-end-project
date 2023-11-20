@@ -1,0 +1,412 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  /* overflow: hidden; */
+}
+
+.container .row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_facilities {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+.flex_facilities p {
+  margin-bottom: 40px;
+  font-size: 1rem;
+  max-width: 300px;
+  margin-left: 0;
+}
+
+.facilities h3 {
+  margin: 20px 0 30px 0;
+  font-weight: bold;
+}
+
+
+.facilities_row {
+  margin-right: 50px;
+}
+
+@media screen and (max-width:700px) {
+  .facilities {
+    border-bottom: 1px solid #B7B5B5;
+  }
+}
+
+
+.reservation_card {
+  width: 400px;
+  height: 210px;
+  margin-top: 40px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  font-size: .9rem;
+}
+
+.reservation_card .dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.reservation_card .total {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.reservation_card .total .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 30px;
+}
+
+.reservation_card .guests_bedroom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.reservation_card button {
+  background-color: #CBB26A;
+  border: none;
+  border-radius: 20px;
+  padding: .3rem;
+  width: 90%;
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+.reservation_card button:hover {
+  background-color: #d2ba74;
+}
+
+@media (max-width: 550px) {
+
+  .container{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .reservation_card {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: auto;
+    max-width: 100%;
+    height: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    background-color: #E9E9E9;
+    z-index: 1;
+    border-radius: 0;
+    /* margin: auto;  */
+  }
+
+  .reservation_card .dates {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 220px;
+    height: 120px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    background-color: white; 
+
+  }
+
+  .reservation_card .guests_bedroom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .guests {
+    margin-left: 20px;
+  }
+
+  .reservation_card button {
+    width: 150px;
+    padding: 10px 30px 10px 30px;
+
+  }
+
+  .reservation_card .total .row {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .total {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .total .row span {
+    display: none;
+  }
+
+  .total .row p {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .selected_dates {
+    margin: 0 5px 5px 5px;
+  }
+
+  .facilities {
+    margin-left: 10px;
+  }
+}
+
+.package_included {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 550px;
+  width: 914.07px;
+  margin: auto;
+}
+.package_included h3{
+  margin-top: 30px;
+font-weight: bold;
+}
+
+.package_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-right: 20px;
+
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.packageInclusions1 {
+  margin-top: 10px;
+  min-width: 210px;
+  margin-left: 0;
+  margin-right: 60px;
+}
+
+.packageInclusions {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+
+@media (max-width: 800px) {
+  .package_items {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+
+  .package_included {
+    margin-right: auto;
+    margin-left: 10px;
+
+  }
+
+}
+
+
+.gray_star {
+  color: #B7B5B5;
+  font-size: 1.5rem;
+}
+
+.gold_star {
+  color: #E4A935;
+  font-size: 1.5rem;
+}
+
+.review_items p {
+  max-width: 180px;
+  margin-top: 20px;
+}
+
+.rating_row img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review_items {
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating_row {
+  display: flex;
+}
+
+.rating {
+  margin-left: 5px;
+  align-self: flex-end;
+}
+
+.reviews_wrapper h3 {
+  margin-left: 100px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-left: 0;
+}
+.reviews_wrapper {
+width: 914.07px;
+}
+
+
+@media (max-width: 600px) {
+  .review_items {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 30px 20px 30px 20px;
+    border-bottom: 1px solid #B7B5B5;
+  }
+
+  .review_items p {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .rating_row {
+    align-self: flex-start;
+
+  }
+
+  .reviews_wrapper h3 {
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  .reviews_wrapper {
+    border-top: 1px solid #B7B5B5;
+    margin-bottom: 60px;
+    margin-left: 10px;
+  }
+
+  .reviews_wrapper {
+    width: auto;
+    }
+
+
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main_img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-height: 500px;
+}
+
+
+.slider_flex_row {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.thumbnail {
+  padding: 0 10px 0 10px;
+}
+
+.thumbnail img {
+  width: 190px;
+  height: 130px;
+}
+
+.image {
+  position: relative;
+}
+
+.next_btn,
+.prev_btn {
+  border: none;
+  background-color: transparent;
+  color: #B7B5B5;
+  font-size: 2rem;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .thumbnail {
+    display: none;
+  }
+
+  .slider_flex_row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .next_btn,
+  .prev_btn {
+    font-size: 24px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 50%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .prev_btn {
+    left: 10px;
+
+  }
+
+  .main_img {
+    max-height: 400px;
+  }
+
+  .next_btn {
+    right: 10px;
+
+  }
+}

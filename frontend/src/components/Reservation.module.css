@@ -1,0 +1,360 @@
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .reservations_infoCard{
+  background-color: #F0F0F0;
+  border-radius: 15px;
+  }
+
+  .reservations_card h4 {
+    font-weight: bold;
+    margin-bottom: .5rem;
+    margin-left: 20px;
+  }
+
+  h4{
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin-left: 20px;
+  }
+  .dates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .date_column{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .guests_row{
+    margin-right: 120px;
+  }
+
+  .reservations_card {
+    width: 900px;
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    padding-bottom: 1px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.guests_row{
+    display: flex;
+    flex-direction: column;
+}
+
+.date_right{
+  margin-right: 8px;
+}
+
+.green_header {
+    background-color: #486349;
+    padding: 30px;
+    color: white;
+    margin-top: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .label_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .label_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #afafaf;
+    border-radius: 50%;
+  }
+  
+  .label_container input:checked ~ .checkmark {
+    background-color: #486349;
+  }
+
+
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .label_container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .label_container .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  .cancellation_protection {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .cancellation_protection .label_container {
+    margin-left: 20px;
+  }
+
+  .totalPrice {
+    border-top: 1px solid gray;
+    margin-top: 20px;
+  }
+  
+  .totalPrice h4 {
+    margin-top: 20px;
+  }
+
+
+  .package_name {
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .reservations_card {
+        width: 380px; 
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .dates{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+      
+      .reservations_infoCard {
+        width: 700px;
+      }
+      
+    
+      .packages_items .inclusions_items {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+      }  
+
+
+      
+  }
+
+  /* FORM */
+
+  .form_wrapper{
+    background-color: transparent;
+    width: 500px;
+    margin: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 2.8px 2.2x rgb(0, 0, 0, 0.034), rgb(0, 0, 0, 0.048), 0 12.80px 10.5px rgb(0, 0, 0, 0.058);
+  }
+  .form_wrapper h4{
+  font-size: 1rem;
+  text-align: end;
+  }
+  
+  .form{
+    background-color: transparent;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+
+.form_control {
+    margin-bottom: 30px;
+    position: relative;
+}
+.form_control p{
+   align-self: flex-start;
+   margin-left: 0;
+   margin-bottom: 2px;
+   font-weight: bold;
+}
+
+.form_control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.form_control input {
+    width: 100%;
+    width: 500px;
+    border: 2px solid rgb(214, 212, 212);
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    background-color: #f8f5f5;
+}
+
+.form_control input:focus {
+    outline: 0;
+    border-color: gray;
+}
+
+.form_row{
+  display: flex;
+ flex-direction: row;
+  border-radius: 15px;
+  width: 900px;
+  margin-top: 30px;
+
+ 
+}
+
+.payment_card{
+  padding-top: 40px;
+  margin-left: 100px;
+}
+.payment_card h4{
+font-weight: bold;
+}
+
+
+.payment_control{
+  margin-top: 30px;
+}
+.payment_control input{
+  margin-right: 30px;
+}
+
+
+.confirm_btn {
+  background-color: #CBB26A;
+  align-self: center;
+  margin-top: 20px; 
+  padding: 10px 20px; 
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  margin-bottom: 40px;
+}
+.confirm_btn:hover {
+  background-color: #d2ba74;
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+  .reservations_infoCard{
+    background-color: transparent;
+    }
+
+  .form_wrapper {
+   width: auto;
+    margin-left: 5px;
+ 
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .form_control input {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 7rem;
+    position: relative;
+    right:10px;
+    
+  }
+
+
+  .form_row {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 380px;
+    max-width: 100%;
+    background-color:#F0F0F0;
+    margin: 0 auto ;
+    margin-top: 20px;
+    
+  }
+
+  .payment_card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  .confirm_btn {
+   margin-right: 150px;
+    margin-bottom: 0;
+    width: 50%;
+    
+  }
+  .confirm_btn p {
+    width: 25%;
+    
+  }
+}
+
+.error{
+  color: firebrick;
+  margin-top: 10px;
+  font-size: .9rem;
+}
+
+
+
+
+
+

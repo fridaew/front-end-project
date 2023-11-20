@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+/* FORMS */
+
+.formWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formWrapper-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    width: 500px;
+    margin: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    ;
+}
+
+.formContainer-login {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    width: 500px;
+    margin: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    ;
+}
+
+.formHeader {
+    background-color: #486349;
+    padding: 30px 0;
+
+}
+
+
+.formHeader h2 {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+
+.form-control {
+    background-color: #f6f6f6;
+    margin-bottom: 30px;
+    position: relative;
+    border: none;
+
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    width: 100%;
+    border: 2px solid rgb(240, 239, 239);
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    background-color: #efefef;
+
+
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: gray;
+
+
+}
+
+
+.form-btn {
+    background-color: #CBB26A;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 1rem;
+    padding: 15px 0;
+    margin-top: 15px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form .btn:hover {
+    background-color: #d2ba74
+}
+
+
+/* NAVBAR */
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #486349;
+}
+
+
+.navbar-logo {
+    position: relative;
+    right: 20px;
+}
+
+.navbar-icon {
+    display: block;
+    margin: 24px 25px 0 20px;
+}
+
+.navbar-icon:hover {
+    cursor: pointer;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 0.8rem;
+    margin-top: 20px;
+    color: #CBB26A;
+}
+
+nav ul li a:hover {
+    color: #fbe7a9
+}
+
+.logout-btn {
+    color: #CBB26A;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 1.7em;
+}
+
+.nav .menu span {
+    height: 0.3rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.1rem;
+}
+
+@media screen and (max-width: 550px) {
+
+
+
+    .navbar-logo {
+        position: relative;
+        right: 20px;
+    }
+
+    .nav .menu {
+        display: flex;
+    }
+
+
+    .nav {
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .nav ul.open{
+        display: flex;
+    }
+
+    ul.open button {
+        color: #CBB26A;
+        background-color: #486349;
+        border: none; 
+        width: 100%;  
+        padding: 8px;
+    }
+
+    .nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav ul li a button{
+        margin: 0.4rem 0.5rem;
+        width: 100%;
+        position: relative;
+        right: 20px;
+        display: block;
+
+    }
+
+    .nav ul li a:hover {
+        background-color: #618462;
+    }
+    .nav ul li button:hover {
+        background-color: #618462;
+    }
+
+    .formContainer-login {
+        margin-bottom: 450px;
+    }
+
+    .formContainer {
+        margin-bottom: 100px;
+    }
+
+    .form-control {
+        right: 20px;
+    }
+
+    .navbar-icon img {
+        display: none;
+
+    }
+
+
+}
+
+/* DROPDOWN PROFILE */
+
+.dropDownProfile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4.9rem;
+    right: .9rem;
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #486349;
+    border: 1px solid transparent;
+    z-index: 1;
+}
+
+.dropDownProfile::before {
+    content: '';
+    position: absolute;
+    top: -0.63rem;
+    right: 1.1rem;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: #486349;
+    border-left: 1px solid rgba(255, 255, 255, 0.278);
+    border-top: 1px solid rgba(255, 255, 255, 0.278);
+}
+
+.dropDownProfile a {
+    width: 100%;
+    position: relative;
+    right: 15px;
+}
+
+.dropDownProfile a:hover {
+    background-color: #618462;
+    border-radius: 0%;
+    width: 100%;
+}
+
+
+
+
+/* FOOTER */
+.footer-container {
+    background-color: #486349;
+    padding: 1rem;
+    color: white;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    flex: 1;
+}
+
+.sb-footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sb-footer-contact ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+
+.sb-footer-contact h4 {
+    font-size: 1rem;
+}
+
+.sb-footer-contact-div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    font-size: .8rem;
+}
+
+.sb-footer-contact-div .gold-text {
+    color: #CBB26A
+}
+
+
+.sb-footer-contact-div a {
+    text-decoration: white;
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    list-style: none;
+}
+
+.sb-footer-contact-div ul img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+
+.sb-footer-contact_div h4 {
+    font-size: 1rem;
+    line-height: 17px;
+    margin-bottom: 0.9rem;
+    color: white;
+    margin-left: 20px;
+
+}
+
+.sb-footer-contact_div ul li {
+    list-style: none;
+}
+
+
+.sb-footer-contact_div p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.footer-row-2 p {
+    color: #CBB26A
+}
+
+.footer-row-2 input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+
+.footer-row-2 input:focus {
+    outline: none;
+}
+
+
+.footer-row-2 .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px 0 0 5px;
+}
+
+.footer-row-2 .input-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.footer-row-2 .input-container button {
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: white;
+    border-left: 1px solid rgb(155, 155, 155);
+    padding-left: 8px;
+    color: gray;
+}
+
+
+
+
+@media screen and (max-width:550px) {
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sb-footer-contact-div {
+        margin-right: 30px;
+    }
+
+    .sb-footer-contact-div h4 {
+        margin-left: 40px;
+    }
+
+    .sb-footer-contact-div .mail-section {
+        display: flex;
+        flex-direction: row;
+        margin-right: 30px;
+    }
+
+    .footer-row-2 input {
+        padding: 10px;
+        width: 200px;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .section-padding {
+        padding: 3rem 3rem;
+    }
+
+    .sb-footer-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        margin-bottom: 100px;
+        font-size: 10px;
+    }
+
+    .social-media img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+
+
+.react-datepicker__input-container input {
+    width: 200px;
+    cursor: pointer;
+}

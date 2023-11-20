@@ -1,0 +1,180 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 220px;
+    max-width: 120%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.imageContainer {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.overlayText {
+    position: absolute;
+    bottom: 62%;
+    right: -9%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.778);
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    max-width: 200%;
+    padding: 8px;
+}
+
+.price {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.945);
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+    width: 40%;
+    margin-top: 10px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    ;
+}
+
+.guest_info {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.guest_info .rooms {
+    margin-right: 15px;
+}
+
+
+
+.gray_star {
+    color: #B7B5B5;
+    font-size: 1rem;
+}
+
+.gold_star {
+    color: #E4A935;
+    font-size: 1rem;
+}
+
+.btn {
+    border: none;
+    background-color: #CBB26A;
+    padding: 6px 15px 6px 15px;
+    border-radius: 15px;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btn:hover {
+    background-color: #d2ba74;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 220px;
+    flex-shrink: 0;
+}
+
+.row1 .rating {
+    font-size: 12px;
+}
+
+.row1 h4 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px;
+}
+
+
+
+.heart {
+    font-size: 35px;
+    cursor: pointer;
+    align-self: flex-end;
+    position: absolute;
+    top: 2px;
+    right: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        align-items: stretch;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .row1,
+    .rooms,
+    .rating,
+    h4 {
+        margin-left: 20px;
+    }
+
+    .row1 h4 {
+        font-size: 1rem;
+        white-space: normal;
+    }
+
+    .row1 .rating {
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
+
+    .price {
+        position: relative;
+        bottom: 20px;
+        left: 10px;
+        width: 70%;
+    }
+
+    .overlayText {
+        position: absolute;
+        bottom: -2px;
+        left: 20%;
+        max-width: 118px;
+        text-align: center;
+    }
+
+    .imageContainer img {
+        width: 100%;
+        height: auto;
+    }
+
+     .guest_info {
+       width: 180px;
+    }
+
+    
+}
