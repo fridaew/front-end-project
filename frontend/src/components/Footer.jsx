@@ -26,18 +26,13 @@ const Footer = () => {
                                         <img src={mail} alt="email" className='mail-icon' />
                                         <a href={`mailto:${email}`}>{email}</a>
                                     </div>
-
                                 </li>
-
                             </ul>
                         </div>
                         <div className='sb-footer-contact_div'>
                             <h4>Sign up for newsletter</h4>
                             <ul className='footer-row-2'>
-                                {/* <li>
-                                <input type="text" placeholder="Email" />
-                                <button>Subscribe</button>
-                            </li> */}
+
                                 <li>
                                     <div className="input-container">
                                         <input type="text" placeholder="Email" />
@@ -63,8 +58,6 @@ const Footer = () => {
 
                             </ul>
                         </div>
-
-
 
                     </div>
                 </div>

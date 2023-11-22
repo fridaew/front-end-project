@@ -1,6 +1,5 @@
 import { Schema,model } from 'mongoose';
 
-
 interface Review {
   image: string; 
   name: String

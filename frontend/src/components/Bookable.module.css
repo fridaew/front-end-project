@@ -52,7 +52,7 @@
     width: 40%;
     margin-top: 10px;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
-    ;
+    font-weight: bold;
 }
 
 .guest_info {
@@ -101,7 +101,8 @@
 }
 
 .row1 .rating {
-    font-size: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .row1 h4 {
@@ -157,6 +158,11 @@
         bottom: 20px;
         left: 10px;
         width: 70%;
+     
+    }
+
+    .btn{
+        margin-bottom: 5px;
     }
 
     .overlayText {

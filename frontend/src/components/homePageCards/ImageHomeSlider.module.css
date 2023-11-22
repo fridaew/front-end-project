@@ -17,6 +17,11 @@ h4{
 
 }
 
+.carousal button{
+display: none;
+}
+
+
 @media screen and (max-width: 768px) {
     .carousel_wrapper {
         flex-direction: column; /* Stack items vertically for smaller screens */

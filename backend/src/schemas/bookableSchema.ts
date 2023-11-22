@@ -13,7 +13,6 @@ interface Bookable {
 
 }
 
-
 const bookablecabinSchema = new Schema<Bookable>({
   description: { type: String, required: true },
   facilities: { type: [String] },

@@ -6,7 +6,8 @@ import styles from '../components/PaymentConfirmation.module.css';
 
 const PaymentConfirmation = () => {
   const location = useLocation();
-  const { totalPrice, image, bookingReference, userEmail } = location.state;
+
+  const { totalPrice, image, bookingReference, userEmail } = location.state || {};
 
   return (
     <div className={styles.container}>
@@ -39,10 +40,14 @@ const PaymentConfirmation = () => {
           </div>
         </div>
 
-        {image && image[0] && (
-          <img src={image[0]} alt="Cabin" width={350} height={250} className={styles.booking_image}
-          />
-        )}
+        <div className={styles.paymentImage}>
+          {image && image[0] && image[1] && (
+            <div>
+              <img src={image[0]} alt="Cabin" width={350} height={250} className={styles.booking_image} />
+              <img src={image[1]} alt="Cabin" width={350} height={250} className={styles.booking_image} />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

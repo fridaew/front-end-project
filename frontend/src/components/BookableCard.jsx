@@ -11,7 +11,7 @@ const BookableCard = ({ bookable}) => {
 
   useEffect(() => {
     setSimulatedRating(generateRandomRating());
-  }, []); // Empty dependency array ensures it only runs once when the component mounts
+  }, []); 
 
 
 
@@ -62,13 +62,13 @@ const BookableCard = ({ bookable}) => {
           </NavLink>
         </div>
         <div className={styles.row1}>
-          <p className={styles.price}>Price: ${bookable.packages.price}</p>
+          <p className={styles.price}>Price: {bookable.packages.price} SEK</p>
           <h4>{bookable.description}</h4>
           <div className={styles.guest_info}>
             <p className={styles.rooms}>{bookable.rooms} Bedroom</p>
             <p>{bookable.guests} Guests</p>
           </div>
-          <p className={styles.rating}>({simulatedRating} {renderSimulatedStarRating()})</p>
+          <p className={styles.rating}>{simulatedRating} {renderSimulatedStarRating()}</p>
         </div>
         <div>
           <p className={styles.heart} onClick={handleHeartClick} style={{ color: isHeartClicked ? 'red' : 'gray' }}><PiHeartStraightFill /></p>

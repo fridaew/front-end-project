@@ -12,39 +12,23 @@ import styles from '../homePageCards/ImageHomeSlider.module.css'
 const ImageHomeSlider = () => {
   return (
     <div className={styles.carousel_wrapper}>
-      
-   <div className={styles.container}>
-   <h3>Explore our activities</h3>
-   
 
-<Carousel data-bs-theme="light" interval={null}>
-<Carousel.Item>
-  <img
-    className="d-block w-100"
-    src={sliderImage1}
-    alt="First slide"
-  />
-</Carousel.Item>
-<Carousel.Item>
-  <img
-    className="d-block w-100"
-    src={sliderImage4}
-    alt="Second slide"
-  />
-</Carousel.Item>
-<Carousel.Item>
-  <img
-    className="d-block w-100"
-    src={sliderImage2}
-    alt="Third slide"
-  />
+      <div className={styles.container}>
+        <h3>Explore our activities</h3>
 
-</Carousel.Item>
-</Carousel>
-</div>
+        <Carousel data-bs-theme="light" interval={null} indicators={false}>
+          <Carousel.Item>
+            <img className="d-block w-100" src={sliderImage4} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={sliderImage2} alt="Second slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={sliderImage1} alt="Third slide" />
+          </Carousel.Item>
+        </Carousel>
+      </div>
     </div>
- 
-
   )
 }
 

@@ -44,7 +44,7 @@ const SignUpForm = () => {
     <div className='formWrapper'>
         <div className='formContainer'>
         <div className='formHeader'>
-                <h2>Sign Up</h2>
+          <h2>Sign Up</h2>
         </div>
 
         <form onSubmit={handleSubmit} className='form' id='form'>
@@ -68,8 +68,6 @@ const SignUpForm = () => {
                 <input type="password" id="password" placeholder='Enter your password' value={formData.password} onChange={handleChange}/>
                 {errorMessage && !formData.password && <p className='error'>{errorMessage}</p>}
             </div>
-        
-
             <button className="form-btn">LOGIN</button>
         </form>
         </div>

@@ -4,7 +4,7 @@ import logo from '../assets/logo.svg';
 import userIcon from '../assets/vector.png';
 import { useUser } from '../context/UserProvider';
 
-const Navbar = () => {
+const Navbar = ({ transparent }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openProfile, setOpenProfile] = useState(false);
   const { user, setUser } = useUser();
@@ -16,10 +16,13 @@ const Navbar = () => {
   const handleLogout = () => {
     setUser(null);
   };
+
   return (
-    <nav className='nav'>
+
+    <nav className={`nav ${transparent ? 'transparent' : ''}`}>
+  
       <Link to='/' className='navbar-logo'>
-        <img src={logo} alt="nav logo" height={70} width={170} />
+        <img src={logo} alt="nav logo" height={70} width={170} className='logo'/>
       </Link>
       <div className='menu' onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>

@@ -20,7 +20,6 @@ const Reservation = () => {
       try {
         const response = await fetch(`http://localhost:3000/api/reservation/${id}`, {
           method: 'GET',
-          // credentials: 'include', 
         });
 
         if (response.ok) {
@@ -86,11 +85,6 @@ const Reservation = () => {
   
     navigate('/payment-confirmation', { state });
   };
-  
-
-
-  
-
 
   return (
     <div className={styles.container}>
@@ -122,8 +116,6 @@ const Reservation = () => {
                     <h4>Guests</h4>
                     <p>{reservations.bookableId.guests} Pers</p>
                   </div>
-
-
                 </div>
 
                 {reservations.bookableId.packages && (
@@ -155,8 +147,6 @@ const Reservation = () => {
                       <h4>Total cost</h4>
                       <p>{reservations.totalPrice || reservations.bookableId.packages.price}: SEK</p>
                     </div>
-
-
                   </div>
                 )}
 

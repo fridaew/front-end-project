@@ -2,9 +2,8 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useDate } from '../context/DatePickerContext';
-import DateSelectionModal from './modal/DateSelectionModal';
-import styles from './BookableDetail.module.css';
-
+import DateSelectionModal from '../components/modal/DateSelectionModal';
+import styles from '../components/BookableDetail.module.css';
 
 import { IoBedOutline, IoPawOutline, IoWifiOutline } from 'react-icons/io5'
 import { TbToolsKitchen2 } from 'react-icons/tb'
@@ -23,9 +22,6 @@ import Washing from '../assets/washing.png'
 import bedding from '../assets/bedding.png'
 
 
-import LoadingComponent from '../components/statusComponents/LoadingComponent';
-import ErrorComponenet from "./statusComponents/ErrorComponenet";
-
 
 const BookableDetail = () => {
 
@@ -39,10 +35,8 @@ const BookableDetail = () => {
   const [sliderData, setSliderData] = useState(null);
   const [val, setVal] = useState(0);
 
-  // const [showMore, setShowMore] = useState(false);
-
   const [isModalOpen, setModalOpen] = useState(false);
-  // const isSmallScreen = window.innerWidth <= 600;
+
 
   useEffect(() => {
     const fetchBookableById = async () => {
@@ -229,7 +223,7 @@ const BookableDetail = () => {
               <span>Total: </span>
               <p>{bookable.packages.price}: SEK</p>
             </div>
-            <button onClick={handleReserveClick}>reserve</button>
+            <button onClick={handleReserveClick}>Reserve</button>
           </div>
         </div>
       </div>
@@ -254,16 +248,6 @@ const BookableDetail = () => {
                 ))}
               </div>
             </div>
-
-            {/* {showMore && isSmallScreen && (
-              <button
-                id="readMoreBtn"
-                className={styles.read_more_btn}
-                onClick={() => setShowMore(!showMore)}
-              >
-                {showMore ? 'Read Less' : 'Read More'}
-              </button>
-            )} */}
           </>
         ) : (
           <p>No package available.</p>

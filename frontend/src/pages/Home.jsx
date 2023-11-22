@@ -1,4 +1,3 @@
-import HeroBanner from '../components/heroComponents/HeroBanner'
 import PackageInfoCard from '../components/homePageCards/PackageInfoCard';
 import InfoCabin from '../components/homePageCards/InfoCabin'
 import ImageHomeSlider from '../components/homePageCards/ImageHomeSlider';
@@ -8,7 +7,6 @@ function Home() {
 
   return (
     <>
-      <HeroBanner />
       <PackageInfoCard/>
       <InfoCabin/>
       <ImageHomeSlider/>

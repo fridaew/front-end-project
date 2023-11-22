@@ -40,8 +40,6 @@ app.use(session({
     })
 }))
 
-
-
 app.use('/api/users', userController)
 app.use('/api/bookable', bookableController)
 // app.use('/api/reservation', requiresAuth, reservationController)

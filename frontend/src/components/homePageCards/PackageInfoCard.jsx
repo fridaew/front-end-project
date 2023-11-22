@@ -19,9 +19,9 @@ export const PackageInfoCard = () => {
         <h4>BUDGET</h4>
         <p>Experience a memorable getaway without breaking the bank with our budget-friendly cabin rental package. Unwind in the midst of nature, surrounded by the peaceful ambiance of the outdoors, making it an ideal escape for the budget-conscious traveler.</p>
         <div className={styles.icon}>
-        <img src={bed} alt="bed-icon" width={17} />
-        <img src={outside} alt="outsida-icon" width={17} />
-        <img src={wifi} alt="wifi-icon" width={17} />
+        <img src={bed} alt="bed-icon" width={20} />
+        <img src={outside} alt="outsida-icon" width={20} />
+        <img src={wifi} alt="wifi-icon" width={20} />
         </div>
     </div>
     <div className={styles.card}>
@@ -29,20 +29,19 @@ export const PackageInfoCard = () => {
         <h4>STANDARD</h4>
         <p>Experience a memorable getaway without breaking the bank with our budget-friendly cabin rental package. Unwind in the midst of nature, surrounded by the peaceful ambiance of the outdoors, making it an ideal escape for the budget-conscious traveler.</p>
         <div className={styles.icon}>
-        <img src={bed} alt="bed-icon" width={17} />
-        <img src={outside} alt="outsida-icon" width={17} />
-        <img src={wifi} alt="wifi-icon" width={17} />
+        <img src={bed} alt="bed-icon" width={20} />
+        <img src={outside} alt="outsida-icon" width={20} />
+        <img src={wifi} alt="wifi-icon" width={20} />
         </div>
-
     </div>
     <div className={styles.card}>
         <img src={deluxe} alt="budget-img" className={styles.package_img}/>
         <h4>DELUXE</h4>
         <p>Experience a memorable getaway without breaking the bank with our budget-friendly cabin rental package. Unwind in the midst of nature, surrounded by the peaceful ambiance of the outdoors, making it an ideal escape for the budget-conscious traveler.</p>
         <div className={styles.icon}>
-        <img src={bed} alt="bed-icon" width={17} />
-        <img src={outside} alt="outsida-icon" width={17}/>
-        <img src={wifi} alt="wifi-icon" width={17}/>
+        <img src={bed} alt="bed-icon" width={20} />
+        <img src={outside} alt="outsida-icon" width={20}/>
+        <img src={wifi} alt="wifi-icon" width={20}/>
         </div>
     </div>
     </div>

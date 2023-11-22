@@ -88,44 +88,6 @@ export const createReservation: RequestHandler = async (req, res, next) => {
 };
 
 
-// export const createReservation: RequestHandler = async (req, res, next) => {
-//   try {
-//     const { bookableId, checkInDate, checkOutDate } = req.body;
-
-//     const bookingReference = generateBookingReference();
-
-//     const userId = req.session.userId;
-
-//     // Check if userId is available in the session
-//     if (!userId) {
-//       return res.status(401).json({ message: "User not authenticated" });
-//     }
-//     const newReservation = await ReservationSchema.create({
-//       bookableId,
-//       userId,
-//       checkInDate,
-//       checkOutDate,
-//       bookingReference,
-//     });
-
-//     if (!newReservation) {
-//       return res.status(404).json({ message: 'Bookable not found' });
-//     }
-
-//     res.status(201).json(newReservation);
-//   } catch (error) {
-//     console.error('Error:', error); // Log any errors
-//     next(error);
-//   }
-// };
-
-
-
-
-
-
-
-
 export const getReservationByUser: RequestHandler = async (req, res) => {
 
   const reservations = await ReservationSchema.find({ userId: req.params.id })

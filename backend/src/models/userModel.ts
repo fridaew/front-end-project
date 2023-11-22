@@ -13,28 +13,6 @@ export const getAuthenticatedUser: RequestHandler = async (req, res,next) =>{
       next(error)
     }
 }
-// export const getAuthenticatedUser: RequestHandler = async (req, res,next) =>{
-//   const authenticatedUserId = req.session.userId;
-
-//     try {
-//       if(!authenticatedUserId){
-//         return res.status(401).json({ message: 'User not authenticated' });
-//       }
-
-//       const user = await User.findById(authenticatedUserId).select('+email').exec()
-//       res.status(200).json(user)
-
-//     } catch (error) {
-//       next(error)
-//     }
-// }
-
-interface SignupeUser {
-  firstName?: string,
-  lastName?: string,
-  email?: string,
-  password?: string
-}
 
 export const signUp: RequestHandler<unknown, unknown, SignupeUser, unknown> = async (req, res, next) => {
 
@@ -76,14 +54,6 @@ export const signUp: RequestHandler<unknown, unknown, SignupeUser, unknown> = as
     console.log('Error:', error); // Log the error message to the console
     next(error);
   }
-}
-
-
-
-
-interface LoginUser {
-  email?: string,
-  password?: string
 }
 
 
