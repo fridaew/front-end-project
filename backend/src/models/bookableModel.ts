@@ -61,9 +61,6 @@ export const getBookableById: RequestHandler = async (req, res, next) => {
 };
 
 
-
-
-
 export const createPackages: RequestHandler = async (req, res, next) => {
 
     try {

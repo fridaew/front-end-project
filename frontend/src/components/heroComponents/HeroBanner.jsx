@@ -13,7 +13,7 @@ const HeroBanner = () => {
 
   const options = [
     { value: 'All', label: 'All' },
-    { value: 'Luxure', label: 'Luxury' },
+    { value: 'Deluxe', label: 'Deluxe' },
     { value: 'Standard', label: 'Standard' },
     { value: 'Budget', label: 'Budget' },
   ];
@@ -58,10 +58,6 @@ const HeroBanner = () => {
     dropdownIndicator: (provided, state) => ({
       ...provided,
       color: 'gray',
-    }),
-    indicatorSeparator: (provided) => ({
-      ...provided,
-      backgroundColor: 'gray', // Set the background color of the separator
     }),
     option: (provided, state) => ({
       ...provided,

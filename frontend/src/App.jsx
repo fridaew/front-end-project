@@ -11,16 +11,12 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer'
 import HeroBanner from './components/heroComponents/HeroBanner';
 
-
 function App() {
 
   const location = useLocation();
 
   return (
     <div className='app'>
-{/* 
-      {location.pathname === '/' ? <HeroBanner /> : <Navbar transparent={location.pathname === '/'} />} */}
-
       {location.pathname === '/' ? <HeroBanner /> : <Navbar/>}
         <Routes>
           <Route path="/" element={<Home /> } />

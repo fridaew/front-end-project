@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import BookableCard from '../components/BookableCard';
-import LoadingComponent from '../components/statusComponents/LoadingComponent'; // Import your LoadingComponent
+import LoadingComponent from '../components/statusComponents/LoadingComponent';
 import ErrorComponenet from "./statusComponents/ErrorComponenet";
 
 const Bookable = () => {
   const location = useLocation();
-  const packageType = location.pathname.split("/").pop(); // Get the package type from the URL
+  const packageType = location.pathname.split("/").pop();
 
   const [bookable, setBookable] = useState(null);
   const [loading, setLoading] = useState(true);

@@ -1,6 +1,3 @@
-// import express from 'express'
-// import * as bookableModel from '../models/bookableModel'
-// import { requiresAuth } from '../middleware/auth';
 import express from 'express';
 import * as bookableModel from '../models/bookableModel';
 import { requiresAuth } from '../middleware/auth';

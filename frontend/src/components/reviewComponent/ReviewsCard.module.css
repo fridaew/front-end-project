@@ -19,14 +19,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     background-color:  #f5f3f3;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     box-shadow: 0 6px 6px rgba(0,0,0,0.2);
     margin: 30px;
   }
   
-
   .card .image {
     width: 120px;
     height: 115px;
@@ -36,7 +36,7 @@
     border: 1px solid rgb(127, 123, 123);
   }
   .card p {
-    max-width: 200px;
+    max-width: 210px;
     font-size: 14px;
   }
 
@@ -52,6 +52,8 @@
     color: #E4A935;
     font-size: 1.5rem;
   }
+
+
 
   @media screen and (max-width:550px){
 

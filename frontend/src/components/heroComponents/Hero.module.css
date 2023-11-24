@@ -29,7 +29,7 @@
     max-width: 700px;
     width: 100%;
     margin: auto;
-    padding: 10px 80px;
+    padding: 10px 50px 10px 20px;
     background-color: rgb(247, 247, 247, 0.9);
     border-radius: 20px;
 }
@@ -96,7 +96,7 @@ form .text_select option {
     width: 50px;
     height: 30px;
     position: relative;
-    left: 3rem;
+    left: 1rem;
 }
 
 .hero_text {
@@ -114,6 +114,7 @@ form .text_select option {
         flex-direction: column;
         max-width: 100%;
         margin: auto 1rem;
+        padding: 10px
     }
 
     .text,
@@ -177,5 +178,7 @@ form .text_select option {
     .hero_text {
         display: none;
     }
+
+    
 }
 

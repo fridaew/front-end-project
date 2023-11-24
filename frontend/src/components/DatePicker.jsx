@@ -6,7 +6,6 @@ import { format } from 'date-fns'
 
 import 'react-datepicker/dist/react-datepicker.css';
 
-
 const MyDatePicker = ({onDateChange}) => {
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();

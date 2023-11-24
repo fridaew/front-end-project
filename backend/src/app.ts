@@ -17,11 +17,6 @@ const app = express();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-// app.use(cors({
-//     origin: ['http://localhost:5173'],
-//     methods: ['POST', 'GET'],
-//     credentials: true
-// }))
 app.use(cors())
 
 app.use(cookieParser());
@@ -42,7 +37,6 @@ app.use(session({
 
 app.use('/api/users', userController)
 app.use('/api/bookable', bookableController)
-// app.use('/api/reservation', requiresAuth, reservationController)
 app.use('/api/reservation', reservationController)
 
 
